@@ -44,7 +44,7 @@ $fonts = "arial";
 			?>
 		</section>
 		<section class="footeroption">
-			<h2><?php echo "This is  Footer content";?></h2>
+			<h2><?php echo "Zaman Web Education";?></h2>
 		</section>
 	</div>
 
