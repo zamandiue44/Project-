@@ -39,31 +39,18 @@ $fontcolor = "#343F94";
 			<h2><?php echo "PHP Fundamental Training"; ?></h2>
 		</section>
 		<section class="maincontent">
-		01. Arithmatic Operators
-		02. Assignment Operators
-		03. Comparison Operators
-		04. Increment/ Decrement Operators
-		05. Logical Operators
-		06. String Operators
-		07. Array Operators
 		<hr />
-		06. String Operators
+		For Loop
 		<hr />
-		Example:
-		<br />
-		
 			<?php
-				$a = "Training With";
-				$b = " Live Project";
-				//$z = $a . $b;
-				$a .=$b;
-				echo $a;
-				
-				
+			for($i=1;$i<=10;$i++){
+				echo "The number is $i <br />";
+			}
 			?>
+			
 		</section>
 		<section class="footeroption">
-			<a href="T-16.01.php"><h2><?php echo "Zaman Web Education";?></h2></a>
+			<a href="T-21.01.php"><h2><?php echo "Zaman Web Education";?></h2></a>
 		</section>
 	</div>
 

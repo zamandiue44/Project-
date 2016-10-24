@@ -47,23 +47,31 @@ $fontcolor = "#343F94";
 		06. String Operators
 		07. Array Operators
 		<hr />
-		06. String Operators
+		07. Array Operators
 		<hr />
 		Example:
 		<br />
 		
 			<?php
-				$a = "Training With";
-				$b = " Live Project";
-				//$z = $a . $b;
-				$a .=$b;
-				echo $a;
+				$a= array(
+					'a' => "Dhaka",
+					'b' => "Dinajpur"
+				);
+				$b= array(
+					'c' => "Rangpur",
+					'd' => "Rajshahi"
+				);
+				var_dump($a===$b);
+				var_dump($a!=$b);
+				var_dump($a<>$b);
+				var_dump($a!==$b);
+				
 				
 				
 			?>
 		</section>
 		<section class="footeroption">
-			<a href="T-16.01.php"><h2><?php echo "Zaman Web Education";?></h2></a>
+			<a href="T-17.01.php"><h2><?php echo "Zaman Web Education";?></h2></a>
 		</section>
 	</div>
 
