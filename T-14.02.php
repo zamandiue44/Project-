@@ -39,18 +39,33 @@ $fontcolor = "#343F94";
 			<h2><?php echo "PHP Fundamental Training"; ?></h2>
 		</section>
 		<section class="maincontent">
+		01. Arithmatic Operators
+		02. Assignment Operators
+		03. Comparison Operators
+		04. Increment/ Decrement Operators
+		05. Logical Operators
+		06. String Operators
+		07. Array Operators
+		<hr />
+		05. Logical Operators
+		<hr />
+		Example:
+		<br />
+		
 			<?php
-			define ("VALUE", "I am learning PHP", true);
-			//echo Value;
-			function learnPHP(){
-				echo Value;
+			$a=10;
+			$b=20;
+			if($a==10 or $b==30){
+				echo "Training With Live Project";
 			}
-			learnPHP();	
+			else{
+				echo "Hi, I am Syed Zaman Mostafiz.";
+			}
 			
 			?>
 		</section>
 		<section class="footeroption">
-			<h2><?php echo "Zaman Web Education";?></h2>
+			<a href="T-14.03.php"><h2><?php echo "Zaman Web Education";?></h2></a>
 		</section>
 	</div>
 

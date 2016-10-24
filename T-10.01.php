@@ -39,14 +39,31 @@ $fontcolor = "#343F94";
 			<h2><?php echo "PHP Fundamental Training"; ?></h2>
 		</section>
 		<section class="maincontent">
+		01. Arithmatic Operators
+		02. Assignment Operators
+		03. Comparison Operators
+		04. Increment/ Decrement Operators
+		05. Logical Operators
+		06. String Operators
+		07. Array Operators
+		<hr />
+		01. Arithmatic Operators
+		<hr />
+		
 			<?php
-			define ("VALUE", "I am learning PHP", true);
-			//echo Value;
-			function learnPHP(){
-				echo Value;
-			}
-			learnPHP();	
-			
+				$x = 5;
+				$y = 2;
+				echo "X is = ".$x;
+				echo "<br />Y is = ".$y;
+				echo "<br />";
+				echo "Sum is ";
+				echo $x+$y."<br />";
+				echo "Sub is ";
+				echo $x-$y."<br />";
+				echo "Multi is ".$x*$y."<br />";
+				echo "Div is ".$x/$y."<br />";
+				echo "Modulus is ";
+				echo $x%$y."<br />";
 			?>
 		</section>
 		<section class="footeroption">

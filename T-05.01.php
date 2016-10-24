@@ -40,12 +40,12 @@ $fontcolor = "#343F94";
 		</section>
 		<section class="maincontent">
 			<?php
-			define ("VALUE", "I am learning PHP", true);
-			//echo Value;
-			function learnPHP(){
-				echo Value;
-			}
-			learnPHP();	
+			$a= "PHP is Nice";
+			echo $a;
+			echo "<br />";
+			echo str_replace("PHP", "Java", $a);
+			
+			
 			
 			?>
 		</section>

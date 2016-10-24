@@ -43,9 +43,9 @@ $fontcolor = "#343F94";
 			define ("VALUE", "I am learning PHP", true);
 			//echo Value;
 			function learnPHP(){
-				echo Value;
+				return Value;
 			}
-			learnPHP();	
+			echo learnPHP();	
 			
 			?>
 		</section>
