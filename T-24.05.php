@@ -40,32 +40,33 @@ $fontcolor = "#343F94";
 		</section>
 		<section class="maincontent">
 		<hr />
-		PHP Arrays
+		PHP Sorting Arrays
 		<hr />
-		Indexed Arrays
-		<hr />
-			<?php 
-				$a= array(5,3,9,10,15);
-				$length= count($a);
-				for($i=0;$i<$length;$i++){
-					echo $a[$i];
-					echo "<br />";
-				}
-				//echo count($a);
-				//echo $a[3];
-				/*
-				$a[0] = 5;
-				$a[1] = 3;
-				$a[2] = 9;
-				$a[3] = 10;
-				$a[4] = 15;
-				*/
+			<?php
+				$age= array("Jamal"=>"20", "Kamal"=>"25", "Aslam"=>"15");
+				asort($age);
+					foreach($age as $key=>$Value){
+						echo "Key = ".$key." Value = ".$Value;
+						echo "<br />";
+						
+					}
+				
+			?>
+			<br />
+			<?php
+				$age= array("Jamal"=>"20", "Kamal"=>"25", "Aslam"=>"15");
+				ksort($age);
+					foreach($age as $key=>$Value){
+						echo "Key = ".$key." Value = ".$Value;
+						echo "<br />";
+						
+					}
 				
 			?>
 			
 		</section>
 		<section class="footeroption">
-			<a href="T-23.02.php"><h2><?php echo "Zaman Web Education";?></h2></a>
+			<a href="T-24.05.php"><h2><?php echo "Zaman Web Education";?></h2></a>
 		</section>
 	</div>
 

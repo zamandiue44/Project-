@@ -40,32 +40,23 @@ $fontcolor = "#343F94";
 		</section>
 		<section class="maincontent">
 		<hr />
-		PHP Arrays
+		PHP Sorting Arrays
 		<hr />
-		Indexed Arrays
-		<hr />
-			<?php 
-				$a= array(5,3,9,10,15);
-				$length= count($a);
-				for($i=0;$i<$length;$i++){
-					echo $a[$i];
+			<?php
+				$name= array("Rakib", "Mamun", "Akbor", "Badol");
+				//$name= array(5,4,3,2,10,1);
+				sort($name);
+				//$length = count($name);
+				for($i=0;$i<4;$i++){
+					echo $name[$i];
 					echo "<br />";
+					
 				}
-				//echo count($a);
-				//echo $a[3];
-				/*
-				$a[0] = 5;
-				$a[1] = 3;
-				$a[2] = 9;
-				$a[3] = 10;
-				$a[4] = 15;
-				*/
-				
 			?>
 			
 		</section>
 		<section class="footeroption">
-			<a href="T-23.02.php"><h2><?php echo "Zaman Web Education";?></h2></a>
+			<a href="T-24.02.php"><h2><?php echo "Zaman Web Education";?></h2></a>
 		</section>
 	</div>
 

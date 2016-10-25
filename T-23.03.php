@@ -42,30 +42,28 @@ $fontcolor = "#343F94";
 		<hr />
 		PHP Arrays
 		<hr />
-		Indexed Arrays
+		Multidimensional Arrays 
 		<hr />
 			<?php 
-				$a= array(5,3,9,10,15);
-				$length= count($a);
-				for($i=0;$i<$length;$i++){
-					echo $a[$i];
-					echo "<br />";
-				}
-				//echo count($a);
-				//echo $a[3];
-				/*
-				$a[0] = 5;
-				$a[1] = 3;
-				$a[2] = 9;
-				$a[3] = 10;
-				$a[4] = 15;
-				*/
-				
+			$cars= array(
+				array("BMW", 15, 50),
+				array("Volvo", 20, 5),
+				array("Saab", 25, 10)
+			);
+			echo $cars[0][0];
+			echo "<br />";
+			echo $cars[0][1];
+			echo "<br />";
+			echo $cars[0][2];
+			echo "<br />";
+			echo $cars[1][0];
+			
+			
 			?>
 			
 		</section>
 		<section class="footeroption">
-			<a href="T-23.02.php"><h2><?php echo "Zaman Web Education";?></h2></a>
+			<a href="T-23.04.php"><h2><?php echo "Zaman Web Education";?></h2></a>
 		</section>
 	</div>
 

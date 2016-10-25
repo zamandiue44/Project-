@@ -40,32 +40,44 @@ $fontcolor = "#343F94";
 		</section>
 		<section class="maincontent">
 		<hr />
-		PHP Arrays
+		PHP From Validation
 		<hr />
-		Indexed Arrays
-		<hr />
+		<table>
+			<tr>
+				<td>Name: </td>
+				<td><input type="text" name="name" /></td>
+			</tr>
+			<tr>
+				<td>E-mail: </td>
+				<td><input type="email" name="email" /></td>
+			</tr>
+			<tr>
+				<td>Website: </td>
+				<td><input type="text" name="website" /></td>
+			</tr>
+			<tr>
+				<td>Comment: </td>
+				<td><textarea name="comment" id="" cols="30" rows="10"></textarea></td>
+			</tr>
+			<tr>
+				<td>Gender: </td>
+				<td>
+					<input type="radio" name="gender" value="Female" />Female
+					<input type="radio" name="gender" value="Male" />Male
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="submit" name="submit" value="Submit" /></td>
+			</tr>
+		</table>
 			<?php 
-				$a= array(5,3,9,10,15);
-				$length= count($a);
-				for($i=0;$i<$length;$i++){
-					echo $a[$i];
-					echo "<br />";
-				}
-				//echo count($a);
-				//echo $a[3];
-				/*
-				$a[0] = 5;
-				$a[1] = 3;
-				$a[2] = 9;
-				$a[3] = 10;
-				$a[4] = 15;
-				*/
-				
+			
 			?>
 			
 		</section>
 		<section class="footeroption">
-			<a href="T-23.02.php"><h2><?php echo "Zaman Web Education";?></h2></a>
+			<a href="T-23.01.php"><h2><?php echo "Zaman Web Education";?></h2></a>
 		</section>
 	</div>
 
