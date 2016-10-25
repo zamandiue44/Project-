@@ -42,7 +42,7 @@ $fontcolor = "#343F94";
 		<hr />
 		PHP Superglobals[$_GET].
 		<hr />
-		
+				<a href="text.php?msg=Good&txt=Bye">Sent Data</a>
 			<?php 
 			
 				
