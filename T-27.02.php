@@ -39,46 +39,32 @@ $fontcolor = "#343F94";
 			<h2><?php echo "PHP Fundamental Training"; ?></h2>
 		</section>
 		<section class="maincontent">
-		01. Arithmatic Operators
-		02. Assignment Operators
-		03. Comparison Operators
-		04. Increment/ Decrement Operators
-		05. Logical Operators
-		06. String Operators
-		07. Array Operators
 		<hr />
-		02. Assignment Operators <br />
-		Example:
-		=
-		+=
-		-=
-		*=
-		/=
-		%=
-		
-		
-		
+		PHP Superglobals[$_REQUEST & $_POST].
 		<hr />
-		
-			<?php
-				$x = 10;
-				echo "Now x is ".$x." (for = )<br />";
-				$x +=20;
-				echo "Now x is ".$x." (for +=)<br />";
-				$x -= 10;
-				echo "Now x is ".$x." (for -= )<br />";
-				$x *= 10;
-				echo "Now x is ".$x." (for *= )<br />";
-				$x /= 10;
-				echo "Now x is ".$x." (for /= )<br />";
-				$x %= 10;
-				echo "Now x is ".$x." (for %= )<br />";				
+			<form action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
+			
+				User Name: <input type="text" name="username" />
+				<input type="submit" value="Submit" />
+			</form>
+			<?php 
+			if($_SERVER["REQUEST_METHOD"]=="POST"){
+				$name= $_POST['username'];
+				if(empty($name)){
+						echo "<span style='color:red'>Username field must not be empty !!</span>";
+				} else{
+					echo "<span style='color:blue'>You have Submitted: ".$name."</span>";
+				}
+				
+				
+			}
+				
 			?>
+			
 		</section>
 		<section class="footeroption">
-			<a href="T-12.01.php"><h2><?php echo "Zaman Web Education";?></h2></a>
+			<a href="T-28.01.php"><h2><?php echo "Zaman Web Education";?></h2></a>
 		</section>
-		<a href="T-12.01.php">T-12.01.php</a>
 	</div>
 
 	

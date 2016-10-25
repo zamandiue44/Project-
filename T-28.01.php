@@ -39,46 +39,19 @@ $fontcolor = "#343F94";
 			<h2><?php echo "PHP Fundamental Training"; ?></h2>
 		</section>
 		<section class="maincontent">
-		01. Arithmatic Operators
-		02. Assignment Operators
-		03. Comparison Operators
-		04. Increment/ Decrement Operators
-		05. Logical Operators
-		06. String Operators
-		07. Array Operators
 		<hr />
-		02. Assignment Operators <br />
-		Example:
-		=
-		+=
-		-=
-		*=
-		/=
-		%=
-		
-		
-		
+		PHP Superglobals[$_GET].
 		<hr />
 		
-			<?php
-				$x = 10;
-				echo "Now x is ".$x." (for = )<br />";
-				$x +=20;
-				echo "Now x is ".$x." (for +=)<br />";
-				$x -= 10;
-				echo "Now x is ".$x." (for -= )<br />";
-				$x *= 10;
-				echo "Now x is ".$x." (for *= )<br />";
-				$x /= 10;
-				echo "Now x is ".$x." (for /= )<br />";
-				$x %= 10;
-				echo "Now x is ".$x." (for %= )<br />";				
+			<?php 
+			
+				
 			?>
+			
 		</section>
 		<section class="footeroption">
-			<a href="T-12.01.php"><h2><?php echo "Zaman Web Education";?></h2></a>
+			<a href="T-29.01.php"><h2><?php echo "Zaman Web Education";?></h2></a>
 		</section>
-		<a href="T-12.01.php">T-12.01.php</a>
 	</div>
 
 	

@@ -39,46 +39,31 @@ $fontcolor = "#343F94";
 			<h2><?php echo "PHP Fundamental Training"; ?></h2>
 		</section>
 		<section class="maincontent">
-		01. Arithmatic Operators
-		02. Assignment Operators
-		03. Comparison Operators
-		04. Increment/ Decrement Operators
-		05. Logical Operators
-		06. String Operators
-		07. Array Operators
 		<hr />
-		02. Assignment Operators <br />
-		Example:
-		=
-		+=
-		-=
-		*=
-		/=
-		%=
-		
-		
-		
+		PHP SuperGolbals[$GLOBALS & $_SERVER].
 		<hr />
-		
+		<pre>
+		$GLOBALS	$_SERVER	
+		$_REQUEST	$_POST	
+		$_GET		$_FILE	
+		$_ENV		$_COOKIE	
+		$_SESSION
+		</pre>
 			<?php
-				$x = 10;
-				echo "Now x is ".$x." (for = )<br />";
-				$x +=20;
-				echo "Now x is ".$x." (for +=)<br />";
-				$x -= 10;
-				echo "Now x is ".$x." (for -= )<br />";
-				$x *= 10;
-				echo "Now x is ".$x." (for *= )<br />";
-				$x /= 10;
-				echo "Now x is ".$x." (for /= )<br />";
-				$x %= 10;
-				echo "Now x is ".$x." (for %= )<br />";				
+				$x=5;
+				$y=10;
+				function sum(){
+					$GLOBALS['z']=$GLOBALS['x']+$GLOBALS['y'];					
+				}
+				sum();
+				echo $z;
 			?>
+			<br />
+			
 		</section>
 		<section class="footeroption">
-			<a href="T-12.01.php"><h2><?php echo "Zaman Web Education";?></h2></a>
+			<a href="T-26.02.php"><h2><?php echo "Zaman Web Education";?></h2></a>
 		</section>
-		<a href="T-12.01.php">T-12.01.php</a>
 	</div>
 
 	

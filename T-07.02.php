@@ -63,6 +63,7 @@ $fontcolor = "#343F94";
 		<section class="footeroption">
 			<h2><?php echo "Zaman Web Education";?></h2>
 		</section>
+		<a href="T-07.03.php">T-07.03.php</a>
 	</div>
 
 	

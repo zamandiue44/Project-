@@ -39,46 +39,38 @@ $fontcolor = "#343F94";
 			<h2><?php echo "PHP Fundamental Training"; ?></h2>
 		</section>
 		<section class="maincontent">
-		01. Arithmatic Operators
-		02. Assignment Operators
-		03. Comparison Operators
-		04. Increment/ Decrement Operators
-		05. Logical Operators
-		06. String Operators
-		07. Array Operators
 		<hr />
-		02. Assignment Operators <br />
-		Example:
-		=
-		+=
-		-=
-		*=
-		/=
-		%=
-		
-		
-		
+		PHP Variable Scope
 		<hr />
-		
 			<?php
-				$x = 10;
-				echo "Now x is ".$x." (for = )<br />";
-				$x +=20;
-				echo "Now x is ".$x." (for +=)<br />";
-				$x -= 10;
-				echo "Now x is ".$x." (for -= )<br />";
-				$x *= 10;
-				echo "Now x is ".$x." (for *= )<br />";
-				$x /= 10;
-				echo "Now x is ".$x." (for /= )<br />";
-				$x %= 10;
-				echo "Now x is ".$x." (for %= )<br />";				
+			$x=15;
+				function test1(){
+					global $x;
+					$a=5;
+					echo $a;
+					echo "<br />";
+					echo "Access from function test1 ".$x;
+					echo "<br />";
+				}
+				
+				function test2(){
+					global $x;
+					$b=10;
+					echo $b;
+					echo "<br />";
+					echo "Access from function test2 ".$x;
+					echo "<br />";
+				}
+				test1();
+				test2();
+				
 			?>
+			<br />
+			
 		</section>
 		<section class="footeroption">
-			<a href="T-12.01.php"><h2><?php echo "Zaman Web Education";?></h2></a>
+			<a href="T-26.01.php"><h2><?php echo "Zaman Web Education";?></h2></a>
 		</section>
-		<a href="T-12.01.php">T-12.01.php</a>
 	</div>
 
 	

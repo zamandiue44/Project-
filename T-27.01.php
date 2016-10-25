@@ -42,17 +42,28 @@ $fontcolor = "#343F94";
 		<hr />
 		PHP Superglobals[$_REQUEST & $_POST].
 		<hr />
-			<form action="" method="">
+			<form action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
+			
 				User Name: <input type="text" name="username" />
 				<input type="submit" value="Submit" />
 			</form>
 			<?php 
+			if($_SERVER["REQUEST_METHOD"]=="POST"){
+				$name= $_REQUEST['username'];
+				if(empty($name)){
+						echo "<span style='color:red'>Username field must not be empty !!</span>";
+				} else{
+					echo "<span style='color:blue'>You have Submitted: ".$name."</span>";
+				}
+				
+				
+			}
 				
 			?>
 			
 		</section>
 		<section class="footeroption">
-			<a href="T-23.01.php"><h2><?php echo "Zaman Web Education";?></h2></a>
+			<a href="T-27.02.php"><h2><?php echo "Zaman Web Education";?></h2></a>
 		</section>
 	</div>
 
