@@ -16,12 +16,17 @@ $name = $email = $website = $comment = $gender = "";
 					
 					if(empty($_POST["email"])){
 						$erremail= "<span style='color:red'>E-mail is Required.</span>";
+					} elseif(!filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)){
+						$erremail= "<span style='color:red'>Invalid E-mail format.</span>";
 					} else{
 						$email= Validate($_POST["email"]);
 					}
 					
+					
 					if(empty($_POST["website"])){
 						$errwebsite= "<span style='color:red'>Website is Required.</span>";
+					}  elseif(!filter_var($_POST["website"], FILTER_VALIDATE_URL)){
+						$errwebsite= "<span style='color:red'>Invalid Website format.</span>";
 					} else{
 						$website= Validate($_POST["website"]);
 					}
@@ -77,6 +82,9 @@ $name = $email = $website = $comment = $gender = "";
 	.maincontent{
 		min-height:400px;
 	}
+	p{
+		margin:0;
+	}
 	
 	</style>
 </head>
@@ -87,48 +95,35 @@ $name = $email = $website = $comment = $gender = "";
 		</section>
 		<section class="maincontent">
 		<hr />
-		PHP Form Required
+		PHP Fundamentals Bangla Tutorial Part-31 (Date and Time)
+		<span style="float:right">
+		<?php
+			date_default_timezone_set('Asia/Dhaka');
+			echo "Bangladesh Time is ".date("h:i:sa")."<br />";
+		?>
+		</span>
 		<hr />
 		
-		<form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF'])?>" method="post">
-		<table>
-		<p style="color:yellow">* Required</p>
-			<tr>
-				<td>Name: </td>
-				<td><input type="text" name="name" />*<?php echo $errname ?></td>
-			</tr>
-			<tr>
-				<td>E-mail: </td>
-				<td><input type="email" name="email"  />*<?php echo $erremail ?></td>
-			</tr>
-			<tr>
-				<td>Website: </td>
-				<td><input type="text" name="website"  />*<?php echo $errwebsite ?></td>
-			</tr>
-			<tr>
-				<td>Comment: </td>
-				<td><textarea name="comment" id="" cols="30" rows="10" ></textarea></td>
-			</tr>
-			<tr>
-				<td>Gender: </td>
-				<td>
-					<input type="radio" name="gender" value="Female"/>Female
-					<input type="radio" name="gender" value="Male"  />Male
-					*<?php echo $errgender ?>
-				</td>
-			</tr>
-			<tr>
-				<td></td>
-				<td><input type="submit" name="submit" value="Submit" /></td>
-			</tr>
-		</table>
-		</form>
+		<?php
+			echo "Today is ".date("d/m/Y")."<br />";
+			echo "Today is ".date("d/m/y")."<br />";
+			echo "Today is ".date("d.m.y")."<br />";
+			echo "Today is ".date("d-m-y")."<br />";
+			echo "Today is ".date("l")."<br />";
+			echo "Defualt Time is ".date("h:i:sa")."<br />";
 			
+			echo date_default_timezone_get();
+		
+			
+			
+			
+		?>		
 		</section>
 		<section class="footeroption">
+		<p>&copy; <?php echo date("Y"); ?> Training With Live Project.</p>
 			<h2><?php echo "Zaman Web Education";?></h2>
 		</section>
-		<a href="T-31.01.php">T-31.01.php</a>
+		<a href="T-33.01.php">T-33.01.php</a>
 	</div>
 
 	

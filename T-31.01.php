@@ -16,12 +16,17 @@ $name = $email = $website = $comment = $gender = "";
 					
 					if(empty($_POST["email"])){
 						$erremail= "<span style='color:red'>E-mail is Required.</span>";
+					} elseif(!filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)){
+						$erremail= "<span style='color:red'>Invalid E-mail format.</span>";
 					} else{
 						$email= Validate($_POST["email"]);
 					}
 					
+					
 					if(empty($_POST["website"])){
 						$errwebsite= "<span style='color:red'>Website is Required.</span>";
+					}  elseif(!filter_var($_POST["website"], FILTER_VALIDATE_URL)){
+						$errwebsite= "<span style='color:red'>Invalid Website format.</span>";
 					} else{
 						$website= Validate($_POST["website"]);
 					}
@@ -87,12 +92,12 @@ $name = $email = $website = $comment = $gender = "";
 		</section>
 		<section class="maincontent">
 		<hr />
-		PHP Form Required
+		PHP Fundamentals Bangla Tutorial Part-30 (URL/E-mail Validation)
 		<hr />
 		
 		<form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF'])?>" method="post">
 		<table>
-		<p style="color:yellow">* Required</p>
+		
 			<tr>
 				<td>Name: </td>
 				<td><input type="text" name="name" />*<?php echo $errname ?></td>
@@ -128,7 +133,7 @@ $name = $email = $website = $comment = $gender = "";
 		<section class="footeroption">
 			<h2><?php echo "Zaman Web Education";?></h2>
 		</section>
-		<a href="T-31.01.php">T-31.01.php</a>
+		<a href="T-32.01.php">T-32.01.php</a>
 	</div>
 
 	
