@@ -1,4 +1,0 @@
-01. Traning with live project. 
-02. Java is Good. 
-03. PHP is better. 
-04. We are learning Web Development that means PHP Language. 

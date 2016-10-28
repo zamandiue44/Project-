@@ -1,5 +1,6 @@
 <section class="footeroption">
-				<?php require 'date.php';?>
+				<?php include 'date.php';?>
+				
 
 			<h2><?php echo "Zaman Web Education";?></h2>
 		</section>

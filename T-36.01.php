@@ -1,36 +1,37 @@
-<!DOCTYPE HTML>
-<html lang="en-US">
-<head>
-	<meta charset="UTF-8">
-	<title>PHP Syntax</title>
-	<style>
-	.phpcoding{width:900px; margin:0 auto; background-color:<?php echo "#ddd;";?>}
-	
-	.headeroption, .footeroption{background-color:#444; color:#fff; text-align:center; padding:20px;}
-	
-	.headeroption h2, .footeroption h2{margin:0;}
-	
-	.maincontent{min-height:400px; padding:20px;}
-	
-	</style>
-</head>
-<body>
-	<div class="phpcoding">
-		<section class="headeroption">
-			<h2><?php echo "PHP Fundamental Training"; ?></h2>
-		</section>
-		<section class="maincontent">		
-			<?php 
+<?php include 'header.php';?>
+		<section class="maincontent">
+		<hr />
+		PHP Fundamentals Bangla Tutorial Part-34 (File Open/Read/Close)
+		<span style="float:right">
+		<?php
+			date_default_timezone_set('Asia/Dhaka');
+			echo "Bangladesh Time is ".date("h:i:sa")."<br />";
+		?>
+		</span>
+		<hr />
+		
+		<?php
 			$filecreate = fopen("text.txt", "w");
+			$ourfile= fopen("text.txt", "r") or die("File not found!!");
+			//echo fread($ourfile,filesize("text.txt"));
+			//echo fgetc($ourfile);
+			while(!feof($ourfile)){
+				echo fgets($ourfile)."<br />";
+			}			
+			fclose($ourfile);
 			
 			
-			?>
+			
+		?>		
 		</section>
 		<section class="footeroption">
-			<a href="T-05.01.php"><h2><?php echo "Zaman Web Education";?></h2></a>
-		</section>
-	</div>
+	
+				<?php require 'date.php';?>
 
+			<h2><?php echo "Zaman Web Education";?></h2>
+		</section>
+		<a href="T-36.01.php">T-36.01.php</a>
+	</div>
 	
 </body>
 </html>
