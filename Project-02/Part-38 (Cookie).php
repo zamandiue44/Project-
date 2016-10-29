@@ -1,5 +1,8 @@
 <?php 
 session_start();
+setcookie("visited", "1", time()-3600, "\n")
+
+
 ?><!DOCTYPE HTML>
 <html lang="en-US">
 <head>
@@ -26,10 +29,21 @@ session_start();
 		Part-38 (Cookie)
 		<hr />
 		
-			<?php 
+			<?php
 			
-				
-				
+			
+			
+			/*if(!isset($_COOKIE['visited'])){
+				setcookie("visited", "1", time()+86400, "\n") or die ("Could not set cookie.");
+				echo "This is your first visited in this website.";
+			} else{
+				echo "You are our old visitor.";
+			}
+			*///setcookie(name, value, expire, path, domain, secure, httponly);
+			echo "Cookies is Deleted";
+			
+			
+			
 			?>
 		
 			

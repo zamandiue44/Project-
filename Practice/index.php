@@ -1,14 +1,17 @@
 <?php
 include_once('connect.php');
 if(isset($_POST['submit'])){
-	$name= $_POST['name'];
+	echo $name= $_POST['name'];
 	$email= $_POST['email'];
 	$address= $_POST['address'];
 	$admission= $_POST['admission'];
-	msql_query("insert into students_record(name, email, address, joining_date) value('$name', $email, $address, $admission)");
+	msql_query("insert into students_record(name, email, address, joining_date) values('$name', '$email', '$address', '$admission')");
+	echo "Yes";
 	
 }
-
+else {
+	echo "not";
+}
 ?>
 
 <!DOCTYPE HTML>
@@ -26,6 +29,6 @@ if(isset($_POST['submit'])){
 		<p><input type="submit" value="Submit" name="submit" /></p>
 		
 	</form>
-	
+
 </body>
 </html>

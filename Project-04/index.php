@@ -5,8 +5,7 @@ if(isset($_POST['submit'])){
 	$email= $_POST['email'];
 	$address= $_POST['address'];
 	$admission= $_POST['admission'];
-	msql_query("insert into students_record(name, email, address, joining_date) value('$name', $email, $address, $admission)");
-	
+	@msql_query("INSERT INTO students_record(name, email, address, joining_date) VALUES('$name', '$email', '$address', '$admission')");
 }
 
 ?>
@@ -26,6 +25,6 @@ if(isset($_POST['submit'])){
 		<p><input type="submit" value="Submit" name="submit" /></p>
 		
 	</form>
-	
+	phpinfo();
 </body>
 </html>

@@ -3,7 +3,7 @@ $name = "Syed Zaman Mostafiz";
 echo $name;
 
 
-echo "<br /><a href='http://localhost/'>LocalHost</a>"
+echo "<br /><a href='http://localhost/project/'>LocalHost</a>"
 
 
 ?>
