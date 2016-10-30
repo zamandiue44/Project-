@@ -25,6 +25,6 @@ if(isset($_POST['submit'])){
 		<p><input type="submit" value="Submit" name="submit" /></p>
 		
 	</form>
-	phpinfo();
+	
 </body>
 </html>

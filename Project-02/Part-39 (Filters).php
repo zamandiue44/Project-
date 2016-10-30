@@ -26,26 +26,24 @@ setcookie("visited", "1", time()-3600, "\n")
 		</section>
 		<section class="maincontent">		
 		<hr />
-		Part-38 (Cookie)
+		Part-39 (Filters)
 		<hr />
 		
 			<?php
-			
-			
-			
-			/*if(!isset($_COOKIE['visited'])){
-				setcookie("visited", "1", time()+86400, "\n") or die ("Could not set cookie.");
-				echo "This is your first visited in this website.";
-			} else{
-				echo "You are our old visitor.";
-			}
-			*///setcookie(name, value, expire, path, domain, secure, httponly);
-			echo "Cookies is Deleted";
-			
-			
-			
+			$str= "<h2>I am Learning PHP.</h2>";
+			$newstr= filter_var($str, FILTER_SANITIZE_STRING);
+			echo $newstr;
+			echo "<br />";
 			?>
-		
+			<?php 
+			$int =50.6;
+			if(filter_var($int, FILTER_VALIDATE_INT)){
+				echo "It is Interger Value";
+			} else{
+				echo "It is not Interger Value.";
+			}
+			?>
+			
 			
 		</section>
 		<section class="footeroption">
